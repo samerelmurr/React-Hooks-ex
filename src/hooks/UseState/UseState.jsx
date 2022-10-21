@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Name from './Name';
 
 const UseState = () => {
 
@@ -22,7 +23,8 @@ const UseState = () => {
   return (
     <div>
         <h1>UseState hook demonstration: </h1>
-         <p>Hello my is {name}</p>
+        <p>Hello my is: </p> 
+        <Name name={name}/>
         {/*<input placeholder="enter something..." onChange={onChange} /> */}
         {/* <button onClick={changeName()}>Change name</button> */}
         <form onSubmit={onSubmit}>
